@@ -14,8 +14,8 @@ Pour cela il vous faudra installer le langage python dans votre machine local, m
   - pip install pylint-django
   
 Avant de lancer le serveur, positionnez vous a la racine du projet et lancez les commandes pour faire les migrations de la BDD :
-  -python manage.py makemigrations
-  -python manage.py migrate
+  - python manage.py makemigrations
+  - python manage.py migrate
   
 Enfin, lancez le server avec la commande :
   - python manage.py runserver
@@ -24,14 +24,14 @@ Puis allez voir le resultat dans http://127.0.0.1:8000 (ou autre port mentionne 
 
 PS : Si vous utilisez VScode comme IDE, veuillez copier-coller ces parametres 
 dans "C:\Users\{votre-nom-d-utilisateur}\AppData\Roaming\Code\User\settings.json" :
-                    {
-                        "python.linting.pylintArgs": [
-                            "--load-plugins=pylint_django",
-                            "--errors-only"
-                        ],
-                        "[python]": {
-                        },
-                    }
+    {
+        "python.linting.pylintArgs": [
+            "--load-plugins=pylint_django",
+            "--errors-only"
+        ],
+        "[python]": {
+        },
+    }
                     
 
 
