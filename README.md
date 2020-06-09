@@ -10,7 +10,7 @@ Ce site realise en python (Django) vous permet de :
   -la barrer ou la debarrer en cliquant sur le buton-texte "barrer"-"debarrer"
   
 
-Pour cela il vous faudra installer le langage python dans votre machine local, mais aussi le module pylint sous cette commande :
+Pour cela il vous faudra installer le langage python dans votre machine local, mais aussi le module pylint sous cette commande:
   - pip install pylint-django
   
 Avant de lancer le serveur, positionnez vous a la racine du projet et lancez les commandes pour faire les migrations de la BDD :
