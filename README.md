@@ -3,11 +3,14 @@ liste de course (CRUD, barrer debarrer un article)
 
 BIENVENU A VOTRE LISTE DE COURSE
 
+Commencez par cloner le projet avec la commande :
+  - git clone https://github.com/Phetparisouk/listeCourse.git
+
 Ce site realise en python (Django) vous permet de :
-  -rajouter des articles a votre liste de courses,
-  -la supprimer de la liste en cliquant sur le bouton-texte "supprimer" tout a gauche
-  -l'editer en cliquant sur le libelle de l'article
-  -la barrer ou la debarrer en cliquant sur le buton-texte "barrer"-"debarrer"
+  - rajouter des articles a votre liste de courses,
+  - la supprimer de la liste en cliquant sur le bouton-texte "supprimer" tout a gauche
+  - l'editer en cliquant sur le libelle de l'article
+  - la barrer ou la debarrer en cliquant sur le buton-texte "barrer"-"debarrer"
   
 
 Pour cela il vous faudra installer le langage python dans votre machine local, mais aussi le module pylint sous cette commande:
