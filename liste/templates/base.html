@@ -10,9 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="{% static 'css/my_css.css' %}" >
+    <link rel="stylesheet" href="{% static 'my_css.css' %}" >
 
-    <title>Hello, world!</title>
+    <title>Votre liste de course!</title>
   </head>
   <body>
 
@@ -28,8 +28,8 @@
           </ul>
           <form class="form-inline my-2 my-lg-0" method=POST>
               {% csrf_token %}
-            <input class="form-control mr-sm-2" type="search" placeholder="ajouter un article" aria-label="Search" name="item">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ajouter un article</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Ajouter un article" aria-label="item" name="item">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ajouter</button>
           </form>
         </div>
       </nav>

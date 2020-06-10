@@ -10,7 +10,7 @@ from django.contrib import messages
 # Create your views here.
 def home(request):
     if request.method == 'POST':
-        form = ListeForm(request.POST or None)
+        form = ListeForm(request.POST)
 
         if form.is_valid():
             form.save()
@@ -21,6 +21,10 @@ def home(request):
         else:
             all_items = Liste.objects.all
             return render(request, 'home.html', {'all_items' : all_items})
+
+    else:
+        all_items = Liste.objects.all
+        return render(request, "home.html", {'all_items':all_items})
 
 def delete(request, liste_id):
     item = Liste.objects.get(pk=liste_id)
@@ -45,7 +49,7 @@ def edit(request, liste_id):
     if request.method == 'POST':
         item = Liste.objects.get(pk=liste_id)
 
-        form = ListeForm(request.POST or None, instance=item)
+        form = ListeForm(request.POST, instance=item)
 
         if form.is_valid():
             form.save()
@@ -55,3 +59,7 @@ def edit(request, liste_id):
         else:
             item = Liste.objects.get(pk=liste_id)
             return render(request, 'edit.html', {'item' : item})
+    
+    else:
+        item = Liste.objects.get(pk=liste_id)
+        return render(request, 'edit.html', {'item' : item})
